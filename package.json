@@ -1,19 +1,31 @@
 {
+  "name": "proposal-regexp-features",
+  "version": "0.0.0",
   "private": true,
-  "name": "template-for-proposals",
-  "description": "A repository template for ECMAScript proposals.",
-  "scripts": {
-    "start": "npm run build-loose -- --watch",
-    "build": "npm run build-loose -- --strict",
-    "build-loose": "ecmarkup --verbose spec.emu index.html"
+  "description": "Proposal to investigate additional language features for ECMAScript Regular Expressions",
+  "homepage": "https://github.com/rbuckton/proposal-regexp-features#readme",
+  "author": {
+    "name": "Ron Buckton",
+    "email": "ron.buckton@microsoft.com"
   },
-  "homepage": "https://github.com/tc39/template-for-proposals#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tc39/template-for-proposals.git"
+  "keywords": [
+    "javascript",
+    "ecmascript"
+  ],
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp start"
   },
   "license": "MIT",
   "devDependencies": {
-    "ecmarkup": "^7.0.3"
+    "del": "^5.1.0",
+    "ecmarkup": "^8.1.0",
+    "gulp": "^4.0.2",
+    "gulp-emu": "^2.0.0",
+    "gulp-live-server": "0.0.31"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rbuckton/proposal-regexp-features.git"
   }
 }
