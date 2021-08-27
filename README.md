@@ -202,7 +202,7 @@ Buffer boundaries are similar to the `^` and `$` anchors, except that they are n
 
 **Prior Art:** Perl, PCRE, Boost.Regex, Oniguruma, ICU, Glib/GRegex ([feature comparison](https://rbuckton.github.io/regexp-features/features/line-endings-escape.html))
 
-- `\R` &mdash; Matches any line ending character sequence. Equivalent to: `(?>\r\n?|[\x0A-\x0C\x85\u{2028}\u{2029}])` (see [Atomic Groups](#atomic-groups))
+- `\R` &mdash; Matches any [line ending character sequence per UTS#18](https://unicode.org/reports/tr18/#Line_Boundaries). Equivalent to: `(?>\r\n?|[\x0A-\x0C\x85\u{2028}\u{2029}])` (see [Atomic Groups](#atomic-groups))
 
 > NOTE: Requires the `u` flag, as `\R` is currently just an escape for `R` without the `u` flag.
 
